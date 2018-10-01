@@ -28,11 +28,11 @@
 // OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-mod eventlog;
-mod transport;
-mod transport_registrar;
-mod url;
-mod zcm;
+pub mod eventlog;
+pub mod transport;
+pub mod transport_registrar;
+pub mod url;
+pub mod zcm;
 
 pub use self::eventlog::*;
 pub use self::transport::*;
