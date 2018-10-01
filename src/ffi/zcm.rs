@@ -107,6 +107,8 @@ extern "C" {
         usr: *mut libc::c_void,
     ) -> *mut zcm_sub_t;
 
+    pub fn zcm_unsubscribe(zcm: *mut zcm_t, sub: *mut zcm_sub_t) -> libc::c_int;
+
     pub fn zcm_try_unsubscribe(zcm: *mut zcm_t, sub: *mut zcm_sub_t) -> libc::c_int;
 
     pub fn zcm_publish(
